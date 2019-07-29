@@ -1,0 +1,22 @@
+apiVersion: build.knative.dev/v1alpha1
+kind: Build
+metadata: 
+  name: build-helloworld-py
+  namespace: build2
+  labels:
+    expect: succeeded
+spec:
+  timeout: 1800s  # timeout specified so that build is not terminated. Default is 10 minutes
+  serviceAccountName: build-bot
+  source:
+    git:
+      url: "https://github.com/knative/docs.git"  # git repository where Dockerfile is present
+      revision: "release-0.7"  # git branch
+    subPath: "docs/serving/samples/hello-world/helloworld-python/"  # path to Dockerfile inside git repo
+  steps:
+  - name: build-and-push
+    image: "gcr.io/kaniko-project/executor:v0.6.0"  # versions above 0.6.0 don't work AFAIK
+    args: ["--dockerfile=/workspace/Dockerfile",
+          "--destination=docker.io/{username}/py-helloworld:git-source",
+          "--skip-tls-verify-pull",
+          "--skip-tls-verify"]
