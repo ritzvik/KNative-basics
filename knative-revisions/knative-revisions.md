@@ -6,7 +6,7 @@
 
 ### Let's create a new namespace
 
-  ```
+  ```sh
 
   $ cat <<EOF | kubectl apply -f -
   apiVersion: v1
