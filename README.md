@@ -19,6 +19,7 @@
   - [KNative official docs](https://knative.dev/docs/)
   - [Introducing Knative: Build, Deploy, and Manage Serverless Workloads on Kubernetes by David Currie](https://www.youtube.com/watch?v=AIDKDLxiCdk)
   - [KNative documentation repo](https://github.com/knative/docs)
+  - [KNative Eventing](https://www.youtube.com/watch?v=riq0x5xdfNg)
 
 ## Limitations
 
