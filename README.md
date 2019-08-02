@@ -21,6 +21,13 @@
   - [KNative documentation repo](https://github.com/knative/docs)
   - [KNative Eventing](https://www.youtube.com/watch?v=riq0x5xdfNg)
 
+## KNative eventing examples
+
+  - [Code Samples](https://github.com/knative/docs/tree/master/docs/eventing/samples/)
+  - [How To Write Knative Container Sources](https://github.com/sebgoa/ksources)
+  - [Generating Events from Your Internal Systems with Knative (Cloud Next '19)](https://www.youtube.com/watch?v=riq0x5xdfNg)
+  - [Deploying a Serverless Service to Knative](https://developers.redhat.com/coderland/serverless/deploying-serverless-knative/)
+
 ## Limitations
 
   - Very unstable software (frequent API changes).
